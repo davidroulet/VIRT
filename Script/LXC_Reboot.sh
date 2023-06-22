@@ -1,1 +1,0 @@
-pct reboot $1

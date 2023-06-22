@@ -1,1 +1,0 @@
-pct exec $1 ip a s dev eth0 | sed -n '/inet / s/\// /p' | awk '{print $2}'
