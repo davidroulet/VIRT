@@ -1,27 +1,15 @@
-# VIRT 
+##Pré-requis :
+Un serveur Proxmox Navigateur Client SSH
+Une connexion internet
 
-## pré requis :
-Un serveur Proxmox 
-Navigateur 
-Client SSH
-Une connextion au web
+##Description :
+Le projet répond au POC "VIR2 - Proof Of Concept [55 pts]" et à été créé dans le cadre du cours "VIR2 : Création d’un environnement pour l’enseignement". Le projet est intégralement fait en Bash et est reparti en plusieurs petits scripts qui effectuent chacun une action bien définie. Un script "Menu.sh" est disponible afin de faciliter l'utilisation du projet. Pour la création des templates LXC, une image de base sera téléchargée s'il n'y en a pas de déja présente. Les conteneurs ont tous 2Go d'espace de stockage. Comme ce projet à été réalisé dans le cadre du CPNV, le pare-feu de celui ci nous empêchait d'installer Patator, pour un cadre d'utilisation réelle, il faut ajouter Patator dans la liste des programmes à installer.
 
-## Déscrition:
-Le projet repond au POC"VIR2 - Proof Of Concept [55 pts]"
-et à été crée dans le cadre du coup "VIR2 : Création d’un environnement pour l’enseignement"
-Le projet es interalement fait en Bash et es reparti en plusieur petit script qui effectue chaqun une action bien définie. Un script "Menu.sh" es disponible afin de facilité l'utilisation du projet 
-pour la creation des templates LXC une image de base sera télécharger si il y en as pas de déja presante. Les contneurs ont tous 2go d'espace de stockage 
-Comme ce projet à été realisé dans le carde du cpnv le pare ceux de celui ci nous empechais d'installé patator pour un cardre utilisation réel il faut ajouer patator dans la liste des programe à install
+##Maintenance :
+Pour mettre à jour l'image utilisée, vous pouvez aller changer la valeur de la template utilisée dans "LXC_CreateTemplate.sh". Afin de créer ou modifier la template, vous pouvez modifier les fichiers "Script_install_pen.sh" et "Script_install_att.sh".
 
-## Maintance: 
-
-Pour mettre à jours l'image utilisé vous pouvez allé changer la valeur de la template utilisé dans "LXC_CreateTemplate.sh" 
-Pour crée ou modifié la template vous pouvez modifié le fichier Script_install_pen.sh et Script_install_att.sh
-
-## Utilisation:
-
-Pour commencé a utilisé ce projet vous devez d'abord copier le dossier scipt et Menu.sh dans votre serveur proxmox
-les script ont besoin d'etre lancer en root la creation des machines templates demande les droit root pour le parametre "nesting=1"
+##Utilisation :
+Pour commencer a utilisé ce projet, vous devez d'abord copier le dossier "script" et "Menu.sh" dans votre serveur Proxmox. Les scripts ont besoin d'être lancer en root, car la création des machines templates demandent les droits root pour le paramètre "nesting=1". 
 
 Lancer Menu.sh
 Avec 
